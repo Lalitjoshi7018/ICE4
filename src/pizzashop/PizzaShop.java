@@ -30,11 +30,11 @@ public class PizzaShop {
         PizzaFactory pf = new PizzaFactory();
         Pizza pizza = pf.createPizza(type);
         System.out.println("how many slices would you like?");
-        int numSlices = sc.nextInt();
-        pizzaCutter.numSlices = numSlices;
+        pizzaCutter.numSlices = sc.nextInt();
+    
         if (pizza!=null)
         {
-            System.out.println("Great job, here is your pizza in " + numSlices + " slices");
+            System.out.println("Great job, here is your pizza in " + pizzaCutter.getnumSlices() + " slices");
             
         }
         else
